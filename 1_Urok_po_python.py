@@ -1,7 +1,72 @@
 import requests
 import json
-url = 'https://www.crb-xml-daily.ru/daily_json.js'
-response = requests.get(url)
-data = json.loads(response.text)
-print (data)
-print (data)
+import pymorphy2
+import random
+from random import random
+from functools import reduce
+from collections import Counter
+
+
+
+def F (*args_lol_lol, **kwargs_lol):
+
+    sl_tuple = args_lol_lol  # s - это кортеж имен, из спика на входе
+    print(type(sl_tuple), sl_tuple)
+
+    sl_list = (list(args_lol_lol)) # s - это лист имен, из спика на входе
+    print(type(sl_list), sl_list)
+
+    sl_str = (str(args_lol_lol))  # s - это имена (тип строка), из спика на входе
+    print(type(sl_str), sl_str)
+
+    a = kwargs_lol['N']  # a - это число 100 из списка, тоесть значение N из спика на входе
+    print(type(a), a)
+
+
+    twenty_name = (sl_list[1:21])    # Вывести 20 имен.
+
+    print ('1. Список 20-ти длин имен (правда не случайных а от 0 до 20го из ста)')
+    for el in twenty_name:
+        ddd = (len(el))
+        print (ddd)
+
+    print ('2- Cамое частое имя из списка: ')
+
+
+
+    yyyy = sorted(sl_list)
+#    print(yyyy)
+    print (yyyy[4:5])
+
+    print ('3- Cамая редкая буква, с которой начинается имена в списке: ')
+    from operator import itemgetter, attrgetter, methodcaller
+    mmm = sorted(sl_list, key=itemgetter(0))
+    x = (mmm[98:-1])
+#    print (x)
+#    print (type(x))
+    xx = (str(x))
+#    print(type(xx), xx)
+    print (xx[2:3])
+   
+
+
+
+F('Катерина', 'Александр', 'Уля', 'Ира', 'Дима', 'Ирина', 'Ярема', 'Катерина', 'Александр', 'Уля', 'Ира', 'Дима', 'Ирина', 'Ярема', 'Катерина', 'Александр', 'Уля', 'Ира', 'Дима', 'Ирина', 'Земфира', 'Сева', 'Марина', 'Юрий', 'Алекс', 'Максим', 'Макс', 'Ева', 'Гриша', 'Николай', 'Захар', 'Паша', 'Григорий', 'Мирось', 'Люда', 'Людмила', 'Луиза', 'Олеся', 'Диана', 'Давид', 'Орест', 'Аркадий', 'Валентина', 'Коля', 'Светлана', 'Рита', 'Ульяна', 'Мариетта', 'Евгений', 'Святослав', 'Эдик', 'Жорж', 'Даниил', 'Тамара', 'Татьяна', 'Дана', 'Карина','Катерина', 'Александр', 'Уля', 'Ира', 'Дима', 'Ирина', 'Земфира', 'Сева', 'Марина', 'Юрий', 'Алекс', 'Максим', 'Макс', 'Ева', 'Гриша', 'Николай', 'Захар', 'Паша', 'Григорий', 'Мирось', 'Люда', 'Людмила', 'Луиза', 'Олеся', 'Диана', 'Давид', 'Орест', 'Аркадий', 'Валентина', 'Коля', 'Светлана', 'Рита', 'Ульяна', 'Мариетта', 'Евгений', 'Святослав', 'Эдик', 'Жорж', 'Даниил', 'Тамара', 'Татьяна', 'Дана', 'Карина', N = 100)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
